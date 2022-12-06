@@ -1,0 +1,37 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --min-width: 320px;
+  --max-width: 1920px;
+  --max-width-container: 1400px;
+  --primary-font-family: "Roboto", sans-serif;
+  --text-color: #1d1d1f;
+  --accent-color: #db042d;
+  --header-height: 80px;
+  --header-height: 80px;
+}
+
+.catalog-page-top-bunner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog-page-top-bunner-item {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.catalog-page-top-bunner-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 1400px;
+}
+
+@media (max-width: 478px) {
+  .catalog-page-top-bunner {
+    display: none;
+  }
+}

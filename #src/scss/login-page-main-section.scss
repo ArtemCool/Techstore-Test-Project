@@ -1,0 +1,247 @@
+@import "support-files/vars";
+
+.login-page-upper-links{
+    padding: 20px 0px;
+    display: flex;
+    a{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 150%;
+        color: #000000;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    span{
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 150%;
+        margin: 0px 8px;
+        color: #0156FF;
+    }
+    p{
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 150%;
+        color: gray;
+    }
+}
+
+.login-page-heading{
+    h2{
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 120%;
+        padding-bottom: 20px;
+    }
+}
+
+.login-page-main-part{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 120px 60px 120px;
+    grid-gap: 35px;
+    .login-page-main-part-left-side{
+        padding: 40px 60px;
+        background: #F5F7FF;
+        .login-heading{
+            h3{
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 150%;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 200%;
+                margin-bottom: 10px;
+            }
+        }
+        .login-input-item{
+            display: grid;
+            margin-bottom: 15px;
+            label{
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 200%;
+                color: #000000;
+                margin-bottom: 5px;
+                span{
+                    color: #C94D3F;
+                }
+            }
+            input{
+                border: 1px solid #A2A6B0;
+                border-radius: 4px;
+                padding: 13px 17px;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 150%;
+                &::placeholder{
+                    color: #A2A6B0;
+                }
+            }
+            &:last-child{
+                margin-bottom: 30px;
+            }
+        }
+        .login-button-and-restore{
+            display: flex;
+            align-items: center;
+            button{
+                margin-right: 23px;
+                color: #FFFFFF;
+                background: #0156FF;
+                border: 2px solid #0156FF;
+                border-radius: 50px;
+                padding: 13px 40px;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 150%;
+                transition: 0.5s;
+                &:hover{
+                    color: #0156FF;
+                    background: #FFFFFF;
+                }
+            }
+            a{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 150%;
+                color: #0156FF;
+                text-decoration: underline;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .login-page-main-part-right-side{
+        padding: 40px 60px;
+        background: #F5F7FF;
+        .create-account-side-heading{
+            margin-bottom: 35px;
+            h3{
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 150%;
+                margin-bottom: 22px;
+            }
+            span{
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 150%;
+            }
+            .benefits-of-account{
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 150%;
+                padding-top: 30px;
+                li{
+                    list-style: inside;
+                }
+            }
+        }
+        .login-page-create-account-button{
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 150%;
+            color: #FFFFFF;
+            background: #0156FF;
+            border-radius: 50px;
+            border: 2px solid #0156FF;
+            padding: 13px 40px;
+            transition: 0.5s;
+            &:hover{
+                background: #FFFFFF;
+                color: #0156FF;
+            }
+        }
+    }
+}
+
+@media (max-width: $laptop){
+    .login-page-main-part{
+        padding: 0px 30px 60px 30px;
+    }
+}
+
+@media (max-width: $tablet){
+    .login-page-upper-links{
+        padding: 20px 0px 13px 0px;
+    }
+    .login-page-heading{
+        h2{
+            font-size: 18px;
+            line-height: 120%;
+            padding-bottom: 13px;
+        }
+    }
+    .login-page-main-part{
+        padding: 0px 30px 30px 30px;
+        grid-gap: 20px;
+        .login-page-main-part-left-side{
+            padding: 30px 20px;
+            .login-heading{
+                h3{
+                    font-size: 14px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+            .login-input-item{
+                label{
+                    font-size: 11px;
+                }
+                input{
+                    padding: 8px 13px;
+                    font-size: 12px;
+                }
+                &:last-child{
+                    margin-bottom: 16px;
+                }
+            }
+            .login-button-and-restore{
+                button{
+                    margin-right: 15px;
+                    padding: 8px 35px;
+                    font-size: 13px;
+                }
+                a{
+                    font-size: 11px;
+                }
+            }
+        }
+        .login-page-main-part-right-side{
+            padding: 30px;
+            .create-account-side-heading{
+                margin-bottom: 22px;
+                h3{
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+                span{
+                    font-size: 12px;
+                }
+                .benefits-of-account{
+                    font-size: 12px;
+                    padding-top: 20px;
+                }
+            }
+            .login-page-create-account-button{
+                margin-right: 15px;
+                padding: 8px 35px;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media (max-width: $tablet-small){
+    .login-page-main-part{
+        grid-template-columns: 1fr;
+        padding: 0px 5px 15px 5px;
+    }
+}

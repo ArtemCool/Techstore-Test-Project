@@ -1,0 +1,183 @@
+@import "support-files/vars";
+
+._swiper {
+    overflow: hidden;
+    //.swiper-wrapper
+    .swiper-wrapper {
+      width: 100%;
+      height: 100%;
+      box-sizing: content-box;
+      display: flex;
+      position: relative;
+    }
+    &.swiper-container-vertical {
+      .swiper-wrapper {
+        flex-direction: column;
+      }
+    }
+    &.swiper-container-autoheight {
+      .swiper-wrapper {
+        align-items: flex-start;
+      }
+    }
+  }
+  .swiper-container-initialized {
+    .swiper-slide {
+      flex-shrink: 0;
+      // transition-property: transform;
+    }
+  }
+  .swiper-container-android {
+    .swiper-slide,
+    .swiper-wrapper {
+      transform: translate3d(0px, 0, 0);
+    }
+  }
+  .swiper-button-lock {
+    display: none !important;
+}
+
+.product-page-intel-swiper{
+    background: #000000;
+    position: relative;
+}
+
+.product-page-intel-slide-wrapper{
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    .product-page-intel-slide-left-side{
+        max-width: 500px;
+        padding: 165px 0px 165px 120px;
+        z-index: 11;
+        h2{
+            font-size: 44px;
+            font-weight: 500;
+            line-height: 120%;
+            color: #FFFFFF;
+            margin-bottom: 50px;
+        }
+        p{
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 150%;
+            color: #FFFFFF;
+        }
+    }
+    .intel-image-wrapper{
+        z-index: 5;
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 70%;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        img{
+            z-index: 1;
+        }
+        .intel-image-gradient{
+            background: 
+                linear-gradient(90deg, transparent 73%, rgb(0, 0, 0)),
+                linear-gradient(0deg, transparent 73%, rgb(0, 0, 0)),
+                linear-gradient(180deg, transparent 73%, rgb(0, 0, 0));
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: 2;
+        }
+    }
+}
+
+.product-page-intel-pagination{
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    z-index: 10;
+    margin-left: 10px;
+}
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background: #CACDD8;
+    margin-right: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    &:last-child{
+      margin-right: 0;
+    }
+}
+.swiper-pagination-bullet-active{
+    background: #0156FF;
+    transition: 0.5s;
+}
+
+@media (max-width: $laptop){
+    .product-page-intel-slide-wrapper{
+        .product-page-intel-slide-left-side{
+            padding: 100px 0px 100px 120px;
+        }
+    }
+}
+
+@media (max-width: $tablet){
+    .product-page-intel-slide-wrapper{
+        .product-page-intel-slide-left-side{
+            max-width: 326px;
+            padding: 60px 0px 70px 60px;
+            z-index: 11;
+            h2{
+                font-size: 32px;
+                margin-bottom: 13px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    .product-page-intel-pagination{
+        display: none;
+    }
+}
+
+@media (max-width: $tablet-small){
+    .product-page-intel-slide-wrapper{
+        display: grid;
+        z-index: 10;
+        padding: 0px 10px 30px 10px;
+        .product-page-intel-slide-left-side{
+            padding: 0;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            h2{
+                text-align: center;
+            }
+        }
+        .intel-image-wrapper{
+            z-index: 5;
+            position: relative;
+            right: 8%;
+            grid-row: 1;
+            max-width: 100%;
+            min-height: 100%;
+            img{
+                z-index: 1;
+            }
+            .intel-image-gradient{
+                background: 
+                    linear-gradient(90deg, transparent 73%, rgb(0, 0, 0)),
+                    linear-gradient(0deg, transparent 73%, rgb(0, 0, 0)),
+                    linear-gradient(180deg, transparent 73%, rgb(0, 0, 0));
+            }
+        }
+    }
+}

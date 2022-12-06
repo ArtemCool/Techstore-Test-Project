@@ -1,0 +1,51 @@
+@import "support-files/vars";
+
+.links-companies-section{
+    padding: 20px 0px;
+}
+
+.companies-links-list{
+    display: flex;
+}
+
+.companies-links-item{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        max-width: 152.72px;
+        max-height: 79.48px;
+        padding: 0 10px;
+        transition-property: max-width;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+    }
+    &:hover{
+        background: #F5F7FF;
+        img{
+            max-width: 160px;
+            max-height: 90px;
+            transition-property: max-width;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+        }
+    }
+}
+
+@media (max-width: $tablet){
+    .companies-links-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: $phone){
+    .companies-links-list{
+        grid-template-columns: 1fr 1fr;
+    }
+    .companies-links-item{
+        height: 116px;
+    }
+}

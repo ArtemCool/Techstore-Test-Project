@@ -1,0 +1,116 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --min-width: 320px;
+  --max-width: 1920px;
+  --max-width-container: 1400px;
+  --primary-font-family: "Roboto", sans-serif;
+  --text-color: #1d1d1f;
+  --accent-color: #db042d;
+  --header-height: 80px;
+  --header-height: 80px;
+}
+
+.faq-page-upper-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0px;
+}
+
+.faq-page-upper-links a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #000000;
+}
+
+.faq-page-upper-links a:hover {
+  text-decoration: underline;
+}
+
+.faq-page-upper-links span {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 150%;
+  margin: 0px 7px;
+  color: #0156FF;
+}
+
+.faq-page-upper-links p {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 150%;
+  color: gray;
+}
+
+.faq-page-heading {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 150%;
+  padding-bottom: 25px;
+}
+
+.faq-page-main-part {
+  margin-bottom: 80px;
+}
+
+.faq-page-main-part h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+
+.faq-page-main-part .faq-page-main-part-grid {
+  display: grid;
+  grid-gap: 50px;
+}
+
+.faq-page-main-part .faq-page-main-part-grid .faq-page-main-part-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+
+.faq-page-main-part .faq-page-main-part-grid .faq-page-main-part-item p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+@media (max-width: 992px) {
+  .faq-page-upper-links {
+    padding: 20px 0px 13px 0px;
+  }
+
+  .faq-page-heading {
+    font-size: 18px;
+    padding-bottom: 13px;
+  }
+
+  .faq-page-main-part {
+    margin-bottom: 60px;
+  }
+
+  .faq-page-main-part h3 {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .faq-page-main-part .faq-page-main-part-grid {
+    grid-gap: 30px;
+  }
+
+  .faq-page-main-part .faq-page-main-part-grid .faq-page-main-part-item h4 {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .faq-page-main-part .faq-page-main-part-grid .faq-page-main-part-item p {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,102 @@
+<link rel="stylesheet" href="assets/collection-filters.css?v=1.0.0">
+
+<form class="filter-form"><details class="filter-group">
+	<summary class="filter-group-summary">
+		<div>
+			<span>Availability</span></div>
+	</summary>
+
+	<div class="filter-group-display">
+		<div class="filter-group-display__header">
+			<span class="filter-group-display__header-selected">0 selected</span></div><ul class="filter-group-display__list"><li class="filter-group-display__list-item">
+				<label for="Filter-filter.v.availability-1">
+					<input type="checkbox" name="filter.v.availability" value="1" id="Filter-filter.v.availability-1">In stock</label>
+			</li><li class="filter-group-display__list-item">
+				<label for="Filter-filter.v.availability-2">
+					<input type="checkbox" name="filter.v.availability" value="0" id="Filter-filter.v.availability-2">Out of stock</label>
+			</li></ul>
+
+		<div class="filter-group-display__submit">
+			<input type="submit" value="Apply">
+		</div></div>
+</details><details class="filter-group">
+	<summary class="filter-group-summary">
+		<div>
+			<span>Price</span></div>
+	</summary>
+
+	<div class="filter-group-display">
+		<div class="filter-group-display__header">
+			<span class="filter-group-display__header-selected"> selected</span></div><div class="filter-group-display__price-range">
+			<div class="filter-group-display__price-range-from">
+				<span>$</span>
+
+				<input name="filter.v.price.gte" id="Filter-filter.v.price.gte" type="number" placeholder="0" min="0" max="123.99">
+
+				<label for="Filter-filter.v.price.gte">From</label>
+			</div>
+			<div class="filter-group-display__price-range-to">
+				<span>$</span>
+
+				<input name="filter.v.price.lte" id="Filter-filter.v.price.lte" type="number" placeholder="123.99" min="0" max="123.99">
+
+				<label for="Filter-filter.v.price.lte">To</label>
+			</div>
+		</div>
+
+		<div class="filter-group-display__submit">
+			<input type="submit" value="Apply">
+		</div></div>
+</details><details class="filter-group">
+	<summary class="filter-group-summary">
+		<div>
+			<span>Product type</span></div>
+	</summary>
+
+	<div class="filter-group-display">
+		<div class="filter-group-display__header">
+			<span class="filter-group-display__header-selected">0 selected</span></div><ul class="filter-group-display__list"><li class="filter-group-display__list-item">
+				<label for="Filter-filter.p.product_type-1">
+					<input type="checkbox" name="filter.p.product_type" value="Cat Food" id="Filter-filter.p.product_type-1">Cat Food</label>
+			</li><li class="filter-group-display__list-item">
+				<label for="Filter-filter.p.product_type-2">
+					<input type="checkbox" name="filter.p.product_type" value="Dog Food" id="Filter-filter.p.product_type-2">Dog Food</label>
+			</li><li class="filter-group-display__list-item">
+				<label for="Filter-filter.p.product_type-3">
+					<input type="checkbox" name="filter.p.product_type" value="Pet Waste Bags" id="Filter-filter.p.product_type-3">Pet Waste Bags</label>
+			</li></ul>
+
+		<div class="filter-group-display__submit">
+			<input type="submit" value="Apply">
+		</div></div>
+</details><details class="filter-group">
+	<summary class="filter-group-summary">
+		<div>
+			<span>Brand</span></div>
+	</summary>
+
+	<div class="filter-group-display">
+		<div class="filter-group-display__header">
+			<span class="filter-group-display__header-selected">0 selected</span></div><ul class="filter-group-display__list"><li class="filter-group-display__list-item">
+				<label for="Filter-filter.p.vendor-1">
+					<input type="checkbox" name="filter.p.vendor" value="Catpro" id="Filter-filter.p.vendor-1">Catpro</label>
+			</li><li class="filter-group-display__list-item">
+				<label for="Filter-filter.p.vendor-2">
+					<input type="checkbox" name="filter.p.vendor" value="Dogpro" id="Filter-filter.p.vendor-2">Dogpro</label>
+			</li><li class="filter-group-display__list-item">
+				<label for="Filter-filter.p.vendor-3">
+					<input type="checkbox" name="filter.p.vendor" value="Hypro Premium" id="Filter-filter.p.vendor-3">Hypro Premium</label>
+			</li><li class="filter-group-display__list-item">
+				<label for="Filter-filter.p.vendor-4">
+					<input type="checkbox" name="filter.p.vendor" value="Purelife Petfoods" id="Filter-filter.p.vendor-4">Purelife Petfoods</label>
+			</li><li class="filter-group-display__list-item">
+				<label for="Filter-filter.p.vendor-5">
+					<input type="checkbox" name="filter.p.vendor" value="pawpantry-vine" id="Filter-filter.p.vendor-5">pawpantry-vine</label>
+			</li></ul>
+
+		<div class="filter-group-display__submit">
+			<input type="submit" value="Apply">
+		</div></div>
+</details><div class="active-filters">
+	<a href="/collections/all?sort_by=price-ascending" class="active-filters__clear">Clear all</a>    </div>
+</form>

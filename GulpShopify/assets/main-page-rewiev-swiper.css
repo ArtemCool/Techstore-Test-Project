@@ -1,0 +1,221 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --min-width: 320px;
+  --max-width: 1920px;
+  --max-width-container: 1400px;
+  --primary-font-family: "Roboto", sans-serif;
+  --text-color: #1d1d1f;
+  --accent-color: #db042d;
+  --header-height: 80px;
+  --header-height: 80px;
+}
+
+._swiper {
+  overflow: hidden;
+}
+
+._swiper .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+._swiper.swiper-container-vertical .swiper-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+._swiper.swiper-container-autoheight .swiper-wrapper {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.swiper-container-initialized .swiper-slide {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.swiper-container-android .swiper-slide,
+.swiper-container-android .swiper-wrapper {
+  -webkit-transform: translate3d(0px, 0, 0);
+          transform: translate3d(0px, 0, 0);
+}
+
+.swiper-button-lock {
+  display: none !important;
+}
+
+.main-page-rewiev-swiper-section {
+  padding: 20px 0px;
+}
+
+.main-page-rewiev-swiper-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 80px;
+  background: #F5F7FF;
+}
+
+.main-page-rewiev-item {
+  margin-bottom: 20px;
+}
+
+.main-page-rewiev-item .main-page-rewiev-item-upper-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.main-page-rewiev-item .main-page-rewiev-item-upper-part img {
+  max-width: 46px;
+  max-height: 25px;
+  margin-right: 20px;
+}
+
+.main-page-rewiev-item .main-page-rewiev-item-upper-part p {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.main-page-rewiev-item .rewiev-swiper-author-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.main-page-rewiev-item .rewiev-swiper-author-name span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.main-page-rewiev-bottom-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-page-rewiev-bottom-part a {
+  padding: 8px 26px;
+  color: #0156FF;
+  border: 2px solid #0156FF;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-page-rewiev-bottom-part a:hover {
+  color: #FFFFFF;
+  background: #0156FF;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.review-swiper-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  background: #CACDD8;
+  margin-right: 10px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+
+.swiper-pagination-bullet-active {
+  background: #0156FF;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (max-width: 1212px) {
+  .main-page-rewiev-swiper-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-page-rewiev-swiper-wrapper {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .main-page-rewiev-item {
+    margin-bottom: 10px;
+  }
+
+  .main-page-rewiev-item .main-page-rewiev-item-upper-part img {
+    max-width: 35px;
+    max-height: 20px;
+  }
+
+  .main-page-rewiev-item .main-page-rewiev-item-upper-part p {
+    font-size: 14px;
+  }
+
+  .main-page-rewiev-item .rewiev-swiper-author-name span {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 478px) {
+  .main-page-rewiev-swiper-wrapper {
+    padding: 20px 20px;
+  }
+
+  .main-page-rewiev-item .main-page-rewiev-item-upper-part img {
+    max-width: 30px;
+    max-height: 15px;
+    margin-right: 10px;
+  }
+
+  .main-page-rewiev-item .main-page-rewiev-item-upper-part p {
+    -webkit-line-clamp: 9;
+  }
+
+  .main-page-rewiev-bottom-part a {
+    font-size: 12px;
+  }
+
+  .swiper-pagination-bullet {
+    margin-right: 7px;
+  }
+}

@@ -1,0 +1,8 @@
+@import "support-files/vars";
+
+.hero-section{
+	height: calc(100vh - var(--header-height));
+	&__content{
+		
+	}
+}

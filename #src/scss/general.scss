@@ -1,0 +1,76 @@
+
+@import "support-files/vars";
+
+//<General>===============================================================================================
+@import "support-files/null";
+@import "support-files/fonts";
+
+html{
+	font-size: 10px;
+}
+
+body {
+	color: var(--text-color);
+	font-size: 1.6rem;
+	&._lock {
+		overflow: hidden;
+	}
+}
+
+section{
+	margin: 0px 0px;
+	&:first-child{
+		margin: 0;
+	}
+}
+//</General>===============================================================================================
+
+.button{
+	color: #0156FF;
+	background: #FFFFFF;
+	padding: 8px 26px;
+	border: 2px solid #0156FF;
+	border-radius: 50px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 100%;
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-height: 37px;
+	transition: .3s ease;
+	cursor: pointer;
+	&:hover{
+		color: #FFFFFF;
+		background-color: #0156FF;
+	}
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: var(--max-width-container);
+	margin: 0 auto;
+	@media (max-width: $laptop) {
+		max-width: calc($tablet - 20px);
+	}
+	@media (max-width: $tablet) {
+		max-width: calc($tablet-small - 20px);
+	}
+	@media (max-width: $tablet-small) {
+		max-width: none;
+		padding: 0 10px;
+	}
+}
+
+.page {
+	flex: 1 1 auto;
+	z-index: 1;
+}

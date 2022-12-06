@@ -1,0 +1,105 @@
+@import "support-files/vars";
+
+.product-page-support-links{
+    background: #F5F7FF;
+}
+
+.product-page-support-links-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #F5F7FF;
+    background-image: url(../img/main-page-support-links.png);
+    background-blend-mode: multiply;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 100px 0px;
+    margin: 0px 260px;
+}
+
+.support-links-list{
+    display: grid;
+    grid-gap: 20px;
+}
+
+.support-links-item{
+    a{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:  18px 27px;
+        border: 1px solid #CACDD8;
+        border-radius: 6px;
+        background: #FFFFFF;
+        width: 347px;
+        transition: 0.5s;
+        span{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 150%;
+            color: #000000;
+        }
+        img{
+            width: 15px;
+            height: 6px;
+            transition: 0.5s;
+        }
+    }
+    &:hover{
+        a{
+            background: #F5F7FF;
+            img{
+                transform: translateX(5px);
+            }
+        }
+    }
+}
+
+@media (max-width: $laptop){
+    .product-page-support-links-wrapper{
+        padding: 100px 0px;
+        margin: 0px 100px;
+    }
+}
+
+@media (max-width: $tablet){
+    .product-page-support-links-wrapper{
+        padding: 65px 0px 65px 75px;
+        margin: 0px;
+    }
+    .support-links-item{
+        a{
+            width: 243px;
+            padding:  13px 22px;
+            span{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: $tablet-small){
+    .product-page-support-links-wrapper{
+        padding: 37px 0px 126px 26px;
+    }
+    .support-links-list{
+        grid-gap: 14px;
+    }
+}
+
+@media (max-width: $phone){
+    .product-page-support-links-wrapper{
+        padding: 37px 0px 126px 0px;
+        background-position: right bottom;
+    }
+    .support-links-item{
+        a{
+            width: 200px;
+            padding:  10px 18px;
+            span{
+                font-size: 12px;
+            }
+        }
+    }
+}

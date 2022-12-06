@@ -1,0 +1,20 @@
+@import "support-files/vars";
+
+.catalog-page-top-bunner{
+    display: flex;
+}
+
+.catalog-page-top-bunner-item{
+    height: 100%;
+    margin: 0 auto;
+    img{
+        object-fit: cover;
+        max-width: 1400px;
+    }
+}
+
+@media (max-width: $phone){
+    .catalog-page-top-bunner{
+        display: none;
+    }
+}
